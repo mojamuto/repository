@@ -12,12 +12,6 @@ jobs:
         run: |
           echo "${{ secrets.RANGHO_REPOSITORY_SIGNING_PGP_PUBLIC }}" > public.asc
 
-      - name: Download Arch Linux artifacts
-        uses: actions/download-artifact@v4
-        with:
-          name: arch
-          path: arch
-
       - name: Download Void Linux artifacts
         uses: actions/download-artifact@v4
         with:
