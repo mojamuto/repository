@@ -15,4 +15,4 @@ changelog=""
 distfiles="https://github.com/Skardyy/mcat/archive/refs/tags/${version}.tar.xz"
 checksum=
 
-post_install()
+post_install() {}
