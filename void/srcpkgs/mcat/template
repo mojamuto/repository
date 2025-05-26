@@ -12,5 +12,5 @@ maintainer="orphan"
 license="MIT"
 homepage="https://github.com/Skardyy/mcat"
 changelog=""
-distfiles="https://github.com/Skardyy/mcat/archive/refs/tags/${version}.tar.xz"
+distfiles="https://github.com/Skardyy/mcat/archive/refs/tags/v${version}.tar.gz"
 checksum=
