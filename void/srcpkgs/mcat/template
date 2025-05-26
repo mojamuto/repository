@@ -1,0 +1,26 @@
+# Template file for 'mcat'
+pkgname=mcat
+version=0.2.8
+revision=1
+build_style=cargo
+build_helper=qemu
+hostmakedepends=""
+makedepends=""
+checkdepends="git"
+short_desc=" cat command for documents / images / videos and more! "
+maintainer="orphan"
+license="MIT"
+homepage="https://github.com/Skardyy/mcat"
+changelog=""
+distfiles="https://github.com/Skardyy/mcat/archive/refs/tags/${version}.tar.gz"
+checksum=
+
+post_install() {
+	for shell in bash fish zsh; do
+		vtargetrun ${DESTDIR}/usr/bin/sheldon completions --shell ${shell} > sheldon.${shell}
+		vcompletion sheldon.${shell} ${shell}
+	done
+
+	vlicense LICENSE-MIT
+	vdoc README.md
+}
