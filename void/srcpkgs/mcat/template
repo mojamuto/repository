@@ -13,4 +13,4 @@ license="MIT"
 homepage="https://github.com/Skardyy/mcat"
 changelog=""
 distfiles="https://github.com/Skardyy/mcat/archive/refs/tags/v${version}.tar.gz"
-checksum=
+checksum=37802f3e07ef76b8abc7cffaaa3839ec45048cc009a274ef40141bb88e2a07c4
